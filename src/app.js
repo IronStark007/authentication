@@ -13,8 +13,8 @@ app.use(logRequest);
 
 app.use(process.env.AUTH_PREFIX_URL, user);
 
-app.use(function errorHandler(err, req, res, next) {
-  res.status(500).send({ error: err.stack });
+app.get(`${process.env.AUTH_PREFIX_URL}/health`, (req, res) => {
+  res.send({ message: "happy" });
 });
 
 app.listen(port, () => {
