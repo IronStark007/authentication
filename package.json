@@ -1,6 +1,6 @@
 {
   "name": "authentication",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Authentication app for backend projects",
   "main": "app.js",
   "scripts": {
