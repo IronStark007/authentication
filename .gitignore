@@ -1,0 +1,5 @@
+// local development
+
+.env
+node_modules
+*.pem
